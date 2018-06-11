@@ -13982,8 +13982,8 @@ app.controller('ProductController', ['$scope', '$http', function ($scope, $http)
     $scope.deleteProduct = function (index) {
         var conf = confirm("Do you want to proceed in deleting this product?");
         if (conf === true) {
-            $http.delete('/product/' + $scope.product[index].id).then(function success(e) {
-                $scope.product.splice(index, 1);
+            $http.delete('/products/' + $scope.products[index].id).then(function success(e) {
+                $scope.products.splice(index, 1);
             });
         }
     };
