@@ -21,7 +21,7 @@ class ProductController extends Controller
      * Lists all products
      *
      * @param \Illuminate\Http\Request $request
-     * @return Collection
+     * @return mixed
      */
     public function index(Request $request)
     {
@@ -33,7 +33,7 @@ class ProductController extends Controller
     /**
      * Shows info about a specific product
      * @param Request $request
-     * @return Collection
+     * @return mixed
      */
     public function show(Product $product, Request $request)
     {
